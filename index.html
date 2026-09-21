@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Girasoles</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Etiqueta audio para la música de fondo -->
+  <audio id="musica" src="musica_de_fondo.mp3" loop></audio>
+
+<script>
+  const musica = document.getElementById("musica");
+
+  document.addEventListener("click", () => {
+    musica.play();
+  }, { once: true });
+</script>
+
+  <!-- Contenedor de girasoles -->
+  <div id="girasol-container"></div>
+
+  <!-- Contenedor de imágenes rotativas -->
+  <div id="rotating-image-container">
+    <img src="imagen1.png" class="rotating-image" id="image1">
+    <img src="imagen2.png" class="rotating-image" id="image2">
+  </div>
+
+  <!-- Script JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
